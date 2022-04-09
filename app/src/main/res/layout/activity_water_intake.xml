@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Water_intake"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="370dp"
+        android:text="@string/water_amount"
+        android:textColor="#3B1561"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button27"
+        tools:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="370dp"
+        android:textColor="#3B1561"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/button27"
+        app:layout_constraintVertical_bias="1.0"
+        tools:fontFamily="sans-serif-black" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="333dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="63dp"
+        android:contentDescription="@string/age"
+        app:layout_constraintBottom_toTopOf="@+id/button27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:srcCompat="@drawable/xlarge" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="333dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/age"
+        app:layout_constraintBottom_toBottomOf="@+id/button27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText13"
+        app:srcCompat="@drawable/xlarge" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="154dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText24" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="586dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="519dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/weight"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="653dp"
+        android:text="@string/daily_water_intake"
+        android:textColor="#3B1561"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
